@@ -1,4 +1,7 @@
 set nocompatible              " be iMproved, required
+let g:NERDTreeDirArrowExpandable = 'x'
+let g:NERDTreeDirArrowCollapsible = '-'
+let g:NERDTreeDirArrows=0
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 filetype off                  " required
 
@@ -15,6 +18,10 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'sheerun/vim-polyglot'
+Plugin 'tpope/vim-fugitive'
+Plugin 'lumiliet/vim-twig'
+Plugin 'mattn/emmet-vim'
+Plugin 'gosukiwi/vim-atom-dark'
 " All of your Plugins must be added before the following line
 
 call vundle#end()            " required
@@ -45,3 +52,9 @@ set tabstop=2
 
 "Mappings"
 nmap <c-R> :CtrlPBufTag<cr>
+nmap <C-O> :NERDTreeToggle<cr>
+
+"Nerd Tree"
+
+"Colour Scheme"
+
