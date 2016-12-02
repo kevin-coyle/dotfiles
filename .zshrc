@@ -86,3 +86,4 @@ export MONO_MANAGED_WATCHER=false
 
 alias weather="curl http://wttr.in/Manchester"
 export PATH="/usr/local/sbin:$PATH"
+alias work='ssh kevincoyle.emedreview.com'
