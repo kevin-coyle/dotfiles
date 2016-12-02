@@ -1,13 +1,7 @@
 alias subl="open -a 'Sublime Text'"
-export PATH="$(brew --prefix homebrew/php/php70)/bin:$PATH"
-alias mmcts="docker exec -it eactsdrupalsite_php_1"
 # Path to your oh-my-zsh installation.
-~/.vocab
 export PATH="$(brew --prefix homebrew/php/php70)/bin:$PATH"
-alias dc=docker-compose
 export ZSH=/Users/kevincoyle/.oh-my-zsh
-#eval "$(docker-machine env default)"
-#eval "$(boot2docker shellinit)"
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -90,6 +84,5 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 export MONO_MANAGED_WATCHER=false
 
 
-[ -s "/Users/kevincoyle/.dnx/dnvm/dnvm.sh" ] && . "/Users/kevincoyle/.dnx/dnvm/dnvm.sh" # Load dnvm
 alias weather="curl http://wttr.in/Manchester"
 export PATH="/usr/local/sbin:$PATH"
