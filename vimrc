@@ -26,7 +26,11 @@ Plugin 'rking/ag.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'StanAngeloff/php.vim'
 Plugin 'msanders/snipmate.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'tobyS/vmustache'
+Plugin 'tobyS/pdv'
 " All of your Plugins must be added before the following line
+
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -116,4 +120,4 @@ if has("autocmd")
 		autocmd BufRead,BufNewFile *.theme set filetype=php
   augroup END
 endif
-
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
