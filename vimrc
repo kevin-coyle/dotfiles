@@ -22,6 +22,10 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'lumiliet/vim-twig'
 Plugin 'mattn/emmet-vim'
 Plugin 'gosukiwi/vim-atom-dark'
+Plugin 'rking/ag.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'StanAngeloff/php.vim'
+Plugin 'msanders/snipmate.vim'
 " All of your Plugins must be added before the following line
 
 call vundle#end()            " required
@@ -98,3 +102,18 @@ augroup autosourcing
 					autocmd!
 						autocmd BufWritePost .vimrc source %
 augroup END
+
+"Drupal Commands"
+if has("autocmd")
+  " Drupal *.module and *.install files.
+  augroup module
+    autocmd BufRead,BufNewFile *.module set filetype=php
+    autocmd BufRead,BufNewFile *.install set filetype=php
+    autocmd BufRead,BufNewFile *.test set filetype=php
+    autocmd BufRead,BufNewFile *.inc set filetype=php
+    autocmd BufRead,BufNewFile *.profile set filetype=php
+    autocmd BufRead,BufNewFile *.view set filetype=php
+		autocmd BufRead,BufNewFile *.theme set filetype=php
+  augroup END
+endif
+
