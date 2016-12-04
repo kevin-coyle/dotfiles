@@ -29,6 +29,7 @@ Plugin 'msanders/snipmate.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tobyS/vmustache'
 Plugin 'tobyS/pdv'
+Plugin 'SirVer/ultisnips'
 " All of your Plugins must be added before the following line
 
 
@@ -121,3 +122,8 @@ if has("autocmd")
   augroup END
 endif
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+
+
+"PHP Stuff"
+nnoremap <leader>d :call pdv#DocumentWithSnip()<CR>
+let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"

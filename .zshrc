@@ -1,4 +1,8 @@
 alias subl="open -a 'Sublime Text'"
+# Work aliases
+alias sbsdrupal="docker exec -it sbsdrupal2016_php_1 drupal"
+alias sbsdrush="docker exec -it sbsdrupal2016_php_1 drush"
+alias sbscomposer="docker exec -it sbsdrupal2016_php_1 composer"
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 # Set name of the theme to load.
