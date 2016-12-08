@@ -4,7 +4,6 @@ let g:NERDTreeDirArrowCollapsible = '-'
 let g:NERDTreeDirArrows=0
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 filetype off                  " required
-
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -29,6 +28,7 @@ Plugin 'msanders/snipmate.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tobyS/vmustache'
 Plugin 'tobyS/pdv'
+Plugin 'joonty/vdebug'
 Plugin 'SirVer/ultisnips'
 " All of your Plugins must be added before the following line
 
@@ -79,7 +79,6 @@ nmap <C-H> <C-W><C-H>
 nmap <C-L> <C-W><C-L>
 
 let mapleader = ',' 
-set t_CO=256
 
 "-------------Mappings--------------"
 ""Make it easy to edit the Vimrc file.
@@ -122,7 +121,11 @@ if has("autocmd")
   augroup END
 endif
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set autoindent
+set smartindent
 
 "PHP Stuff"
 nnoremap <leader>d :call pdv#DocumentWithSnip()<CR>

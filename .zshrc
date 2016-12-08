@@ -1,4 +1,5 @@
 alias subl="open -a 'Sublime Text'"
+export TERM=xterm-256color
 # Work aliases
 alias sbsdrupal="docker exec -it sbsdrupal2016_php_1 drupal"
 alias sbsdrush="docker exec -it sbsdrupal2016_php_1 drush"
