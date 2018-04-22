@@ -32,7 +32,7 @@ Plugin 'joonty/vdebug'
 Plugin 'SirVer/ultisnips'
 Plugin 'vim-airline/vim-airline'
 Plugin 'jdkanani/vim-material-theme'
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'dracula/vim'
 " All of your Plugins must be added before the following line
 
 call vundle#end()            " required
