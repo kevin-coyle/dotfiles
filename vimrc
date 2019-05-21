@@ -136,6 +136,6 @@ let g:UltiSnipsListSnippets="<c-e>"
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 set laststatus=2
 let g:user_emmet_leader_key=','
-"set colorcolumn=72
+set colorcolumn=81
 set splitbelow
 set rtp+=/usr/local/opt/fzf
